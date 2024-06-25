@@ -1,0 +1,73 @@
+ul {
+                   display: flex;
+                   list-style-type: none;                  
+}
+
+nav a {
+                   text-decoration: none;
+                   color: white;
+}
+
+
+
+
+nav {
+                   display: flex;
+                   justify-content: space-around;
+                   margin-top: 16px;
+}
+
+.firstlist ul li {
+                   margin-left: 80px;
+                   padding-top: 20px;
+}
+
+
+.firstlist .fype:hover {
+                   text-decoration: underline violet;
+}
+
+.bnt button {
+                   position: relative;
+                   background-color: rgb(223, 102, 199);
+                   border-radius: 5px;
+                   box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+                   padding: 15px;
+                   background-repeat: no-repeat;
+                   cursor: pointer;
+                   box-sizing: border-box;
+                   width: 154px;
+                   height: 49px;
+                   color: #fff;
+                   border: none;
+                   font-size: 15px;
+                   transition: all 0.3s ease-in-out;
+                   z-index: 1;
+                   overflow: hidden;
+                   margin-left: 2px;
+                   margin-top: 18px;
+                   margin-bottom: 0px;
+                 }
+                 
+                .bnt button::before {
+                   content: "";
+                   background-color: rgba(248, 50, 93, 0);
+                   width: 0;
+                   height: 100%;
+                   position: absolute;
+                   top: 0;
+                   left: 0;
+                   z-index: -1;
+                   transition: width 700ms ease-in-out;
+                   display: inline-block;
+                 }
+                 
+                 .bnt button:hover::before {
+                   width: 100%;
+                 }
+               
+                 .bnt button:active {
+                   transform: translate(0.2em, 0.2em);
+                   box-shadow: 0.2em 0.2em;
+                 }
+
